@@ -8,16 +8,22 @@
 </head>
 <body>
 
+    <!-- division container for app -->
     <div class="container">
+        <!-- our product section -->
         <div class="product">
+            <!-- gallery section to populate -->
             <div class="gallery">
+                <!-- image -->
                 <img src="images/image1.png" alt="" id="product-img">
+                <!-- control divisions -->
                 <div class="controls">
                     <span class="btn active"></span>
                     <span class="btn"></span>
                     <span class="btn"></span>
                 </div>
             </div>
+            <!-- details section -->
             <div class="details">
                 <!-- name of product -->
                 <h1>Casual T Shirt</h1>
@@ -27,9 +33,13 @@
                 <h3>30% Off</h3>
                 <!-- description -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ex!</p>
+                <!-- form element -->
                 <form action="">
+                    <!-- size selection -->
                     <div class="size-select">
+                        <!-- paragraph element -->
                         <p>Size</p>
+                        <!-- radio buttons for t-shirt sizing -->
                         <label for="small">
                             <input type="radio" name="size" id="small">
                             <span>S</span>
@@ -52,11 +62,15 @@
                         </label>
                     </div>
 
-                    <!-- radio buttons -->
+                    <!-- radio buttons for colour selection-->
                     <div class="color-select">
+                        <!-- paragraph element -->
                         <p>Color</p>
+                        <!-- label colour input -->
                         <label for="red">
+                            <!-- create a radio input -->
                             <input type="radio" name="color" id="red">
+                            <!-- create a span to populate with colour -->
                             <span class="color-1"></span>
                         </label>
                         <label for="green">
@@ -72,12 +86,14 @@
                             <span class="color-4"></span>
                         </label>
                     </div>
-
+                    <!-- create quantity selection -->
                     <div class="quantity-select">
+                        <!-- indicate quantity -->
                         <p>Quantity</p>
+                        <!-- input value -->
                         <input type="number" value="1">
                     </div>
-
+                    <!-- buy button -->
                     <button>Buy Now</button>
                 </form>
             </div>
@@ -85,34 +101,43 @@
     </div>
 
     <script>
+        // create a product image
         let productImg = document.getElementById("product-img");
+        // create a button element
         let btn = document.getElementsByClassName("btn");
-
+        // btn first instance add onclick function which sets productImg src to images 1
         btn[0].onclick = function(){
             productImg.src = "images/image1.png";
-
+            
+            // for each button
             for (bt of btn) {
+                // remove active classlist
                 bt.classList.remove("active");
             }
+            // set active to selected button
             this.classList.add("active");
         }
+        // on selection set image to btn selection
         btn[1].onclick = function(){
             productImg.src = "images/image2.png";
-
+            // remove active from all buttons
             for (bt of btn) {
                 bt.classList.remove("active");
             }
+            // add active to selected button
             this.classList.add("active");
         }
+        // onclick of button
         btn[2].onclick = function(){
+            // add new image src
             productImg.src = "images/image3.png";
-
+            // remove active from all buttons
             for (bt of btn) {
                 bt.classList.remove("active");
             }
+            // add active to selection
             this.classList.add("active");
         }
     </script>
-    
 </body>
 </html>

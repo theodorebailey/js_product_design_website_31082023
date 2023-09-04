@@ -1,3 +1,4 @@
+/* general page styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* container styling */
 .container{
     width: 100%;
     min-height: 100vh;
@@ -14,6 +16,7 @@
     justify-content: center;
 }
 
+/* product styling */
 .product{
     width: 90%;
     max-width: 750px;
@@ -21,6 +24,7 @@
     display: flex;
 }
 
+/* general gallery styling */
 .gallery{
     flex-basis: 47%;
     background: #241e20;
@@ -30,12 +34,14 @@
     position: relative;
 }
 
+/* gallery image styling */
 .gallery img{
     width: 100%;
     display: block;
     padding-top: 100px;
 }
 
+/* details for gallery styling */
 .details{
     flex-basis: 53%;
     background: #fff;
@@ -47,37 +53,44 @@
     color: #777;
 }
 
+/* details main heading styling */
 .details h1{
     color: #fff;
     font-size: 35px;
 }
 
+/* details smaller heading stlying */
 .details h2{
     color: #555;
     font-size: 30px;
     font-weight: 300;
 }
 
+/* third header styling */
 .details h3{
     color: #00d874;
     margin-bottom: 15px;
 }
 
+/* details form styling */
 .details form{
     font-size: 15px;
     font-weight: 400;
 }
 
+/* size radio select styling */
 .size-select{
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
 
+/* paragraph size-select styling */
 .size-select p{
     width: 70px;
 }
 
+/* size select input with checked = true and span element */
 .size-select input:checked + span{
     color: blue;
     font-weight: 600;
@@ -88,22 +101,26 @@
     display: none;
 }
 
+/* size select span element */
 .size-select span{
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
 }
 
+/* colour radio select */
 .color-select{
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
+/* colour select paragraph element */
 .color-select p{
     width: 75px;
 }
 
+/* colour select span element */
 .color-select span{
     display: inline-block;
     width: 15px;
@@ -113,6 +130,7 @@
     cursor: pointer;
 }
 
+/* set colours to choose */
 .color-1{background: red;}
 
 .color-2{background: green;}
@@ -121,26 +139,31 @@
 
 .color-4{background: pink;}
 
+/* hide input for radio */
 .color-select input{
     display: none;
 }
 
 /* shrinks the color and provides a circle around it  */
+/* colour select class with input field with checked = true's with the immediate proceeding span element */
 .color-select input:checked + span{
     transform: scale(0.7);
     box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
 }
 
+/* quantity selection field */
 .quantity-select{
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
+/* parapraph in quantity select field */
 .quantity-select p{
     width: 75px;
 }
 
+/* input field in quantity field */
 .quantity-select input{
     background: #eee;
     border: 0;
@@ -150,6 +173,7 @@
     border-radius: 12px;
 }
 
+/* form button styling */
 form button{
     background: #553ff0;
     color: #fff;
@@ -171,6 +195,7 @@ form button{
     right: 20px;
 }
 
+/* button element  */
 .btn{
     display: block;
     width: 10px;
@@ -181,6 +206,7 @@ form button{
     cursor: pointer;
 }
 
+/* active button element */
 .btn.active{
     background: #ffeff0;
 }
